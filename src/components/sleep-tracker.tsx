@@ -9,13 +9,13 @@ import { Button } from "@/components/ui/button"
 export default function SleepTracker() {
   const [sleepTime, setSleepTime] = useState('')
   const [wakeTime, setWakeTime] = useState('')
-  const [sleepDuration, setSleepDuration] = useState(null)
+  const [sleepDuration, setSleepDuration] = useState('')
 
   const calculateSleepDuration = () => {
     const sleep = new Date(`2000-01-01T${sleepTime}:00`)
     const wake = new Date(`2000-01-01T${wakeTime}:00`)
     if (wake < sleep) wake.setDate(wake.getDate() + 1)
-    const diff = (wake - sleep) / 1000 / 60 / 60
+    const diff = (Number(wake) - Number(sleep)) / 1000 / 60 / 60
     setSleepDuration(diff.toFixed(1))
   }
 

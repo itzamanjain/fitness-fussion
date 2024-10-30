@@ -9,7 +9,12 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'r
 
 export default function ProgressTracker() {
   const [weight, setWeight] = useState('')
-  const [measurements, setMeasurements] = useState([])
+  interface Measurement {
+    date: string;
+    weight: number;
+  }
+
+  const [measurements, setMeasurements] = useState<Measurement[]>([])
 
   const addMeasurement = () => {
     if (weight) {
