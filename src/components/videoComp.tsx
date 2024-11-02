@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 interface VideoCompProps {
   link: string;
 }
 
 const videoComp: React.FC<VideoCompProps> = ({ link }) => {
+
+  // const [url,setUrl] = useState('https://www.youtube.com/embed/')
+  // const [videoId,setVideoId] = useState('') extract from url 
+  // videoUrl = url + videoId
+
   return (
     <div className="w-full md:w-3/5 h-1/2 md:h-full bg-black">
         <iframe 

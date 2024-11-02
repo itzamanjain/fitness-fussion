@@ -18,6 +18,10 @@ Code review system
 Discussion threads
 Student/teacher roles
 
+https://www.youtube.com/embed/{videoid}
+videoid - jd90S8RePo4 [after watch?v="videoid"&etccc]
+url https://www.youtube.com/watch?v=jd90S8RePo4&list=RDjd90S8RePo4&start_radio=1
+
 # FitnessFusion
 
 FitnessFusion is a comprehensive fitness application designed to help users achieve their health and wellness goals. It combines workout planning, nutrition tracking, social features, and more to provide a holistic fitness experience.
@@ -104,12 +108,12 @@ FitnessFusion is a comprehensive fitness application designed to help users achi
 
 1. Clone the repository:
    ```
-   git clone https://github.com/your-username/fitness-fusion.git
+   git clone https://github.com/your-username/code-along.git
    ```
 
 2. Navigate to the project directory:
    ```
-   cd fitness-fusion
+   cd code-along
    ```
 
 3. Install dependencies:
