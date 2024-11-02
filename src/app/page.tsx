@@ -5,7 +5,8 @@ import { Dumbbell, Zap, Trophy, Users } from 'lucide-react'
 
 export default function LandingPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white overflow-hidden relative">
+    <>
+      <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white overflow-hidden relative">
       {/* Background Beams */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-1/2 -left-1/4 w-3/4 h-3/4 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full opacity-20 blur-3xl"></div>
@@ -85,6 +86,7 @@ export default function LandingPage() {
         </footer>
       </div>
     </div>
+    </>
   )
 }
 
